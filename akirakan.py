@@ -17,8 +17,8 @@ while True:
     # Get next line from file
     line = locations.readline()
     location = line.rstrip('\n')
-    file_url = f"https://petronas:viewreport@weather.akirakan.com/archive/forecast_report/{ym}/{location}-2023-05-01_issue_at_05:00_LT.pdf"
-    filename = f"{location}-2023-05-01_issue_at_05_00_LT.pdf"
+    file_url = f"https://petronas:viewreport@weather.akirakan.com/archive/forecast_report/{ym}/{location}-{ymd}_issue_at_05:00_LT.pdf"
+    filename = f"{location}-{ymd}_issue_at_05_00_LT.pdf"
     r = requests.get(file_url, stream=True)
 
     # if line is empty
