@@ -1,9 +1,9 @@
 import os
 
 import requests
-from datetime import datetime, timedelta
+from datetime import datetime
 
-today = datetime.today() - timedelta(days=1)
+today = datetime.today()
 ym = today.strftime("%Y-%m")
 ymd = today.strftime("%Y-%m-%d")
 download_dir = "C:/Users/mvmwe/PycharmProjects/akirakan/files"
